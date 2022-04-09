@@ -8,7 +8,6 @@
   justify-content: space-around;
   border-bottom: 1px solid #757575;
   width: 100%;
-  max-width: 80%;
 
   .link__list {
     font-family: variables.$font-secondary;
@@ -43,11 +42,6 @@
       }
     }
   }
-  .left__items{
-      display: grid;
-    grid-template-columns: max-content max-content; 
-    gap:10px
-  }
 
   .buttons__header {
     display: grid;
@@ -61,12 +55,11 @@
       justify-content: space-around;
       cursor: pointer;
       border-radius: 50px;
-  border: none;
+      border: 2px solid #efefef;
       color: #fff;
       font-weight: 600;
       padding: 15px 20px;
       background-color: variables.$secondary-color;
-box-shadow: 10px 2px 66px -12px rgba(66,56,56,0.74);
     }
     .connect__button {
       border: 2px solid #3D00B7;
