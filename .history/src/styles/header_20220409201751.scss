@@ -1,0 +1,9 @@
+@use "variables";
+
+.link__list {
+  font-family: variables.$font-secondary;
+  color:variables.$heading-color;
+  display: flex;
+  font-size:16px;
+ 
+}

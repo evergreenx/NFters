@@ -1,0 +1,46 @@
+@use "variables";
+
+.header__container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid variables.$secondary-color;
+  width: 100%;
+
+
+  .link__list {
+    font-family: variables.$font-secondary;
+    color: variables.$heading-color;
+    display: flex;
+    font-size: 16px;
+    list-style-type: none;
+    justify-content: space-around;
+    font-weight: 600;
+
+    li {
+      margin-left: 60px;
+      cursor: pointer;
+    }
+  }
+
+  .input__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    border: 2px solid #efefef;
+    padding: 10px;
+    input {
+      border: none;
+      padding: 5px;
+      outline: none;
+      font-weight: 700;
+
+      ::placeholder {
+        color: red;
+      }
+    }
+  }
+}
