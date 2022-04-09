@@ -87,9 +87,9 @@
 @media screen and (max-width: 768px) {
   .header__content {
       display: flex;
-      justify-content: space-around;
+      justify-content: end;
       width: 100%;
-    .link-container {
+    .link__list {
       display: none;
     }
 

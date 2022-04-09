@@ -1,7 +1,7 @@
 @use "variables";
 
 .header__container {
-  border-bottom: 1px solid #757575;
+    border-bottom: ;
 }
 .header__content {
   display: flex;
@@ -9,6 +9,7 @@
   padding-bottom: 20px;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 1px solid #757575;
   width: 100%;
   max-width: 90%;
   margin: 0 auto;
@@ -79,26 +80,6 @@
       padding: 15px 20px;
 
       cursor: pointer;
-    }
-  }
-}
-
-// responsive for mobile
-@media screen and (max-width: 768px) {
-  .header__content {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-    .link-container {
-      display: none;
-    }
-
-    .input__container {
-      display: none;
-    }
-
-    .connect__button{
-        display: none;
     }
   }
 }

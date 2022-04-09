@@ -86,10 +86,8 @@
 // responsive for mobile
 @media screen and (max-width: 768px) {
   .header__content {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-    .link-container {
+      dis
+    .link__list {
       display: none;
     }
 
