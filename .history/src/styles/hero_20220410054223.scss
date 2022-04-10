@@ -3,9 +3,9 @@
 .hero__container {
     background-image: url('../../public/assets/dotbg.svg');
     background-repeat: no-repeat;
-    background-position:4px 230px;
+    background-position: 20px ;
   max-width: 90%;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 10px;
   .hero__row {
     display: grid;
@@ -40,7 +40,7 @@
       border: none;
       border-radius: 50px;
       font-size: 20px;
-    //   box-shadow: 10px 2px 66px -12px rgba(66, 56, 56, 0.74);
+      box-shadow: 10px 2px 66px -12px rgba(66, 56, 56, 0.74);
 
       // box-shadow: ;
     }
