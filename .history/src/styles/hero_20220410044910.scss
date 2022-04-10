@@ -1,0 +1,17 @@
+@use "variables.scss";
+
+.hero__container {
+  .hero__row {
+    h1 {
+      font-weight: 800;
+      font-family: variables.$font-priamry;
+      font-size: 40px;
+    }
+
+    p {
+        font-family: variables.$font-secondary;
+        font-weight: 400;
+        font-size:20p
+    }
+  }
+}
