@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "format": "yarn prettier -w ."
   },
   "devDependencies": {
     "@astrojs/react": "^0.1.0",
@@ -14,5 +15,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "sass": "^1.50.0"
+  },
+  "dependencies": {
+    "kursor": "^0.1.6"
   }
 }

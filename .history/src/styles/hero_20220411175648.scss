@@ -1,0 +1,96 @@
+@use "variables.scss";
+
+.hero__container {
+    background-image: url('../../public/assets/dotbg.svg');
+    background-repeat: no-repeat;
+    background-position:4px 230px;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+  .hero__row {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    h1 {
+      font-weight: 800;
+      font-family: variables.$font-priamry;
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+    }
+    img {
+      width: 100%;
+      height: 440px;
+    }
+    p {
+      font-family: variables.$font-secondary;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 20px 0px 40px 0px;
+      font-stretch: ultra-condensed;
+      letter-spacing: -0.05em;
+      color: #565656;
+    }
+
+    button {
+        cursor: pointer;
+      background-color: variables.$secondary-color;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 20px;
+    //   box-shadow: 10px 2px 66px -12px rgba(66, 56, 56, 0.74);
+
+      // box-shadow: ;
+    }
+
+    .count{
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        align-items: center;
+        grid-row-gap: 20px;
+        h2{
+            font-size: 40px;
+            font-weight: 900;
+            font-family: variables.$font-priamry;
+        }
+        p{
+            padding: 0;
+
+        }
+    }
+  }
+
+
+
+
+
+ 
+
+}
+
+ .about__nfters {
+
+    background-color: red;
+  }
+
+
+
+// responsive for mobile
+@media screen and (max-width: 768px) {
+  .hero__container {
+    .hero__row {
+      grid-template-columns: 1fr;
+      gap: 0px;
+      margin: 0 auto;
+      justify-items: center;
+      img {
+        width: 100%;
+        height: auto;
+        
+      }
+    }
+  }
+}

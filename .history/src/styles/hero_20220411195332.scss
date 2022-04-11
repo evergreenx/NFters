@@ -1,0 +1,158 @@
+@use "variables.scss";
+
+.hero__container {
+  background-image: url("../../public/assets/dotbg.svg");
+  background-repeat: no-repeat;
+  background-position: 4px 230px;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+  .hero__row {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    h1 {
+      font-weight: 800;
+      font-family: variables.$font-primary;
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+    }
+    img {
+      width: 100%;
+      height: 440px;
+    }
+    p {
+      font-family: variables.$font-secondary;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 20px 0px 40px 0px;
+      font-stretch: ultra-condensed;
+      letter-spacing: -0.05em;
+      color: #565656;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: variables.$secondary-color;
+      color: #fff;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 20px;
+      //   box-shadow: 10px 2px 66px -12px rgba(66, 56, 56, 0.74);
+
+      // box-shadow: ;
+    }
+
+    .count {
+      margin: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      align-items: center;
+      grid-row-gap: 20px;
+      h2 {
+        font-size: 40px;
+        font-weight: 900;
+        font-family: variables.$font-primary;
+      }
+      p {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.about__nfters {
+  padding: 20px;
+  margin-bottom: 20px;
+  .hero__container__about {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px;
+
+    .about__text__container {
+      width:330px;
+      h1 {
+        font-family: variables.$font-primary;
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+    }
+
+    .transaction {
+      display: flex;
+      flex-direction: row;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      font-family: variables.$font-secondary;
+    }
+
+    p {
+      color: #696969;
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 10px;
+
+      font-family: variables.$font-secondary;
+    }
+
+    .heading {
+      display: flex;
+      justify-content: space-around;
+      //  align-items: center;
+
+      .heading__text {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  background: rgba(217, 224, 236, 0.2);
+}
+
+// responsive for mobile
+@media screen and (max-width: 768px) {
+  .hero__container {
+    .hero__row {
+      grid-template-columns: 1fr;
+      gap: 0px;
+      margin: 0 auto;
+      justify-items: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+
+
+  .about__nfters{
+.hero__container__about {
+grid-template-columns: 1fr;
+pa
+
+.transaction {
+      // display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      
+
+      .heading {
+        margin-top: 20px;
+      }
+    }
+  }
+
+   
+  }
+   
+}
