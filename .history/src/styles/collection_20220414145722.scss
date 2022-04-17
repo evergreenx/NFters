@@ -1,0 +1,24 @@
+@use "variables";
+
+.collection__container {
+    max-width: 90%;
+  padding: 10px;
+  margin: 50px auto;
+
+  h1 {
+    font-family: variables.$font-primary;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .row{
+      font-family: variables.$font-secondary;
+
+      .stock__contain{
+          display: grid;
+            grid-template-columns: 1fr 1fr;
+      }
+     x
+  }
+}

@@ -1,0 +1,11 @@
+@use "variables";
+
+.collection__container {
+    max-width: 90;
+  h1 {
+    font-family: variables.$font-primary;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}

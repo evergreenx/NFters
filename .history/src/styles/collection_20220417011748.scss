@@ -1,0 +1,101 @@
+@use "variables";
+
+.collection__container {
+  max-width: 90%;
+  padding: 10px;
+  margin: 50px auto;
+
+  h1 {
+    font-family: variables.$font-primary;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .row {
+    font-family: variables.$font-secondary;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+    .stock__contain {
+      display: flex;
+      justify-content: space-between;
+      grid-gap: 10px;
+      margin-top: 40px;
+
+      .stock-para {
+        font-weight: 800;
+        font-size: 20px;
+      }
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #363639;
+        }
+
+        div {
+          margin-left: 15px;
+        }
+      }
+
+      .right {
+        span {
+          font-weight: 700;
+          font-size: 16px;
+          color: #3a3a3a;
+          margin-left: 8px;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 12px;
+          color: #3a3a3a;
+        }
+      }
+
+
+
+    }
+
+
+    .collection__contain{
+
+
+      p{
+        font-weight: 700;
+        font-size: 20px;
+        color: 
+#000000
+      }
+
+      .collection__count{
+
+        display: flex;
+
+        .eth{
+
+          border:1px solid #00AC4F;
+          border-radius: 5px; padding: 8px;
+          margin-right: 10px;
+&
+
+
+          }
+
+        }
+
+        
+     
+      }
+
+
+    }
+
+
+  }
+}
