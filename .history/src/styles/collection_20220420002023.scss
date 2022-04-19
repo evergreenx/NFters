@@ -68,8 +68,8 @@
       margin-top: 40px;
 
 
-      .collection__details {
-        margin-left:40px
+      .collection_details {
+        margin
       }
   
       p {
@@ -106,7 +106,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 10px 0 20px 0;
+        margin-bottom: 20px;
 
         img {
           width: 34px;
@@ -169,38 +169,14 @@
   .collection__container {
     .row {
       grid-template-columns: 1fr;
-      gap: 10px;
-
-      .col
-    
-    
+      gap: 0px;
+      margin: 0 auto;
+      justify-items: center;
       img {
         width: 100%;
         height: auto;
       }
-
-      
-     .collection__contain {
-       flex-direction: column;
-
-       button {
-         margin:0 auto;
-         width: 70%;
-         text-align: center;
-          align-items: center;
-          justify-content: center;
-
-
-       }
-       .collection__details {
-
-        margin-left: 0;
-        margin: 20px 0;
-       }
-
-     }
     }
-
   }
 }
 @media screen {

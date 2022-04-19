@@ -1,7 +1,7 @@
 @use "variables";
 
 .collection__container {
-  max-width: 90%;
+  max-width: 64rem;
   padding: 10px;
   margin: 50px auto;
 
@@ -64,13 +64,8 @@
     .collection__contain {
 
       display: flex;
-  
+      justify-content: space-between;
       margin-top: 40px;
-
-
-      .collection__details {
-        margin-left:40px
-      }
   
       p {
         font-weight: 700;
@@ -106,7 +101,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 10px 0 20px 0;
+        margin-bottom: 20px;
 
         img {
           width: 34px;
@@ -169,38 +164,14 @@
   .collection__container {
     .row {
       grid-template-columns: 1fr;
-      gap: 10px;
-
-      .col
-    
-    
+      gap: 0px;
+      margin: 0 auto;
+      justify-items: center;
       img {
         width: 100%;
         height: auto;
       }
-
-      
-     .collection__contain {
-       flex-direction: column;
-
-       button {
-         margin:0 auto;
-         width: 70%;
-         text-align: center;
-          align-items: center;
-          justify-content: center;
-
-
-       }
-       .collection__details {
-
-        margin-left: 0;
-        margin: 20px 0;
-       }
-
-     }
     }
-
   }
 }
 @media screen {
