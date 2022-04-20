@@ -1,0 +1,285 @@
+---
+import collectionone from '../../public/assets/collectionone.png'
+import profileimage from '../../public/assets/profile.png'
+import collectionCol from '../../public/assets/collectioncol.png'
+import collectionTwo from '../../public/assets/collectiontwo.png'
+import collectionThird from '../../public/assets/collectionthird.png'
+import svg2 from '../../public/assets/svg2.svg' ;
+import topcol1 from '../../public/assets/topcol1.png'
+
+
+let collection = [{
+    
+    name: 'The Futr Abstr',
+    image : collectionCol
+},
+
+{
+    name: 'The Futr Abstr',
+    image : collectionTwo
+
+},
+{
+    name: 'The Futr Abstr',
+    image : collectionThird
+
+}
+]
+
+let topCollection = [
+    {
+       name: 'CryptoFunks' ,
+       value : '19,769.39',
+       image : topcol1,
+       percent : +26.52,
+       verify:true
+
+
+
+    } , 
+
+    {
+        name: 'Cryptix' ,
+       value : '19,769.39',
+       image : topcol1,
+       percent : +10.52,
+           verify:false
+
+
+
+    } , 
+
+    {
+
+        name :'Frensware' ,
+       value : '19,769.39',
+       image : topcol1 ,
+       percent : +2.52,
+       verify:false
+
+
+
+    } , 
+
+    {
+        name : 'PunkArt',
+       value : '19,769.39',
+       image : topcol1,
+         percent : +1.52,
+       verify:false
+
+
+
+    }
+    ,
+    {
+        name : 'Art Crypto',
+       value : '19,769.39',
+       image : topcol1 ,
+         percent : +2.52,
+       verify:false
+
+
+
+
+        
+    }
+]
+---
+
+<section class="collection__container">
+
+<div class="row">
+
+
+<div class="col">
+
+<img src={collectionone} alt="collectionone" class="collection__image">
+
+
+
+
+<div class="stock__contain">
+
+<div class="left">
+<img src={profileimage} alt="profileimage" class="collection__image">
+
+<div class="">
+<p class="stock-para">
+The Futr Abstr
+
+</p>
+
+<span>
+10 in the stock</span>
+</div>
+
+</div>
+
+<div class="right">
+
+<p>
+Highest Bid
+</p>
+<div class="svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+<g clip-path="url(#clip0_0_213)">
+<path d="M12.671 11.4564L6.50004 15.3231L0.325043 11.4564L6.50004 0.589722L12.671 11.4564ZM6.50004 16.5647L0.325043 12.6981L6.50004 21.9231L12.675 12.6981L6.50004 16.5647Z" fill="#3A3A3A"/>
+</g>
+<defs>
+<clipPath id="clip0_0_213">
+<rect width="13" height="21.3333" fill="white" transform="translate(0 0.589722)"/>
+</clipPath>
+</defs>
+</svg>
+
+<span>0.25 ETH</span>
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+<div class="col">
+
+
+{
+    collection.map(i =>(
+
+<div class="collection__contain">
+     <div>
+     <img src={i.image} alt="collectionone" class="collection__image">
+
+     </div>
+
+<div class="collection__details">
+
+<p>
+{
+    i.name
+}
+</p>
+
+
+<div class="collection__count">
+
+<div class="image">
+<img src={profileimage} alt="profileimage" class="collection__image">
+
+</div>
+
+<div class="eth">
+
+<div class="svg__contain">
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+<g clip-path="url(#clip0_0_224)">
+<path d="M8.31533 7.13126L4.26566 9.66876L0.213318 7.13126L4.26566 0L8.31533 7.13126ZM4.26566 10.4836L0.213318 7.9461L4.26566 14L8.318 7.9461L4.26566 10.4836Z" fill="#00AC4F"/>
+</g>
+<defs>
+<clipPath id="clip0_0_224">
+<rect width="8.53125" height="14" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+</div>
+
+0.25 ETH
+
+</div>
+
+<div class="count">
+
+1 of 8
+</div>
+
+
+</div>
+
+<button>
+Place a bid
+</button>
+
+
+
+</div>
+
+
+     </div>
+
+
+    ))
+}
+</div>
+<div class="col top__collection__contain">
+
+<h1>
+
+Top Collections over 
+</h1>
+
+<p>
+
+Last 7 days
+</p>
+
+
+<div class="top__collection__row">
+
+<ol>
+
+
+
+{
+    topCollection.map(i =>(
+
+        
+<li>
+
+<div class="row">
+<img src={i.image} alt="profileimage" class="collection__image">
+
+
+
+<h3>
+{
+    i.name
+}
+</h3>
+
+
+<h
+
+
+
+
+
+
+
+</div>
+
+</li>
+    
+    ))
+
+}
+</ol>
+
+
+
+</div>
+</div>
+</div>
+
+
+,
+
+</section>
